@@ -1,0 +1,178 @@
+ProductID,ProductName,Category,SubCategory,Brand,UnitPrice,UnitCost
+P0001,Fresh Milk 2L,Fresh Food,Dairy,Sadia,26.19,19.2
+P0002,Laban 1L,Fresh Food,Dairy,Colgate,13.59,9.53
+P0003,Greek Yogurt,Fresh Food,Dairy,Pampers,26.97,20.23
+P0004,Cheddar Slices,Fresh Food,Dairy,Fine,49.89,35.74
+P0005,Labneh 500g,Fresh Food,Dairy,Philips,40.18,29.54
+P0006,Butter 400g,Fresh Food,Dairy,Samsung,11.38,8.62
+P0007,Cream 250ml,Fresh Food,Dairy,Al Rabie,27.63,21.52
+P0008,Feta Cheese,Fresh Food,Dairy,Saudia,13.91,10.58
+P0009,Kids Milk 6pk,Fresh Food,Dairy,Persil,11.97,9.09
+P0010,Arabic Bread,Fresh Food,Bakery,Philips,24.26,18.09
+P0011,Brown Toast,Fresh Food,Bakery,Nakheel Basics,21.95,16.17
+P0012,Croissant 6pk,Fresh Food,Bakery,Pampers,29.8,22.31
+P0013,Samoli 6pk,Fresh Food,Bakery,Al Rabie,30.13,22.81
+P0014,Date Maamoul,Fresh Food,Bakery,Saudia,9.27,6.55
+P0015,Muffins 4pk,Fresh Food,Bakery,Tamimi Select,25.1,18.64
+P0016,Tortilla Wraps,Fresh Food,Bakery,Nakheel Basics,17.71,12.62
+P0017,Burger Buns,Fresh Food,Bakery,Almarai,15.65,12.2
+P0018,Rusk,Fresh Food,Bakery,Philips,12.73,9.29
+P0019,Bananas 1kg,Fresh Food,Fruits & Vegetables,Pampers,58.6,45.36
+P0020,Tomatoes 1kg,Fresh Food,Fruits & Vegetables,Tamimi Select,32.23,24.13
+P0021,Cucumbers,Fresh Food,Fruits & Vegetables,Persil,35.67,24.4
+P0022,Potatoes 2kg,Fresh Food,Fruits & Vegetables,Al Watania,25.07,19.15
+P0023,Onions 2kg,Fresh Food,Fruits & Vegetables,Pampers,11.91,8.95
+P0024,Apples Red,Fresh Food,Fruits & Vegetables,Tamimi Select,18.43,14.2
+P0025,Whole Chicken,Fresh Food,Meat & Poultry,Saudia,18.61,13.4
+P0026,Chicken Breast,Fresh Food,Meat & Poultry,Persil,49.72,37.85
+P0027,Minced Beef,Fresh Food,Meat & Poultry,Nadec,36.8,26.35
+P0028,Lamb Cuts,Fresh Food,Meat & Poultry,Dove,49.59,37.52
+P0029,Chicken Nuggets,Fresh Food,Meat & Poultry,Philips,39.12,29.99
+P0030,Beef Burger,Fresh Food,Meat & Poultry,Fine,35.01,27.07
+P0031,Basmati Rice 5kg,Pantry,Rice & Grains,Samsung,36.61,28.84
+P0032,Sella Rice 10kg,Pantry,Rice & Grains,Anker,18.14,13.66
+P0033,Lentils 1kg,Pantry,Rice & Grains,Al Watania,8.66,7.03
+P0034,Oats,Pantry,Rice & Grains,Lego,14.02,10.77
+P0035,Bulgur,Pantry,Rice & Grains,Dove,18.89,14.89
+P0036,Pasta 500g,Pantry,Rice & Grains,Afia,10.64,8.02
+P0037,Flour 2kg,Pantry,Rice & Grains,Anker,30.9,22.38
+P0038,Freekeh,Pantry,Rice & Grains,Nadec,48.56,35.5
+P0039,Sunflower Oil 1.8L,Pantry,Oils,Pampers,45.41,33.41
+P0040,Olive Oil 1L,Pantry,Oils,Nestle,34.55,26.92
+P0041,Corn Oil 1.5L,Pantry,Oils,Abu Kass,18.8,13.6
+P0042,Ghee 800g,Pantry,Oils,Abu Kass,19.48,15.78
+P0043,Coconut Oil,Pantry,Oils,Almarai,73.17,57.67
+P0044,Canola Oil,Pantry,Oils,Persil,40.29,32.52
+P0045,Tuna 3pk,Pantry,Canned Food,Nakheel Basics,12.48,9.29
+P0046,Fava Beans,Pantry,Canned Food,Saudia,23.1,18.39
+P0047,Chickpeas,Pantry,Canned Food,Philips,8.88,6.42
+P0048,Tomato Paste,Pantry,Canned Food,Tamimi Select,10.71,8.28
+P0049,Sweet Corn,Pantry,Canned Food,Abu Kass,31.6,22.89
+P0050,Mushrooms,Pantry,Canned Food,Afia,9.57,7.03
+P0051,Baked Beans,Pantry,Canned Food,Sadia,16.39,12.26
+P0052,Sukkari Dates 1kg,Pantry,Dates,Samsung,85.67,67.89
+P0053,Ajwa Dates,Pantry,Dates,Abu Kass,47.88,38.88
+P0054,Khalas Dates,Pantry,Dates,Dove,11.83,9.05
+P0055,Medjool Dates,Pantry,Dates,Almarai,32.34,24.44
+P0056,Date Paste,Pantry,Dates,Saudia,12.31,9.74
+P0057,Stuffed Dates,Pantry,Dates,Almarai,52.13,39.35
+P0058,Water 330ml x40,Beverages,Water,Al Rabie,34.09,22.15
+P0059,Water 1.5L x6,Beverages,Water,Nadec,50.35,32.01
+P0060,Sparkling Water,Beverages,Water,Dove,17.04,12.2
+P0061,Zamzam Pack,Beverages,Water,Nakheel Basics,7.29,5.21
+P0062,Water 5 Gal,Beverages,Water,Al Watania,19.12,13.9
+P0063,Alkaline Water,Beverages,Water,Nakheel Basics,22.34,15.21
+P0064,Orange Juice 1.75L,Beverages,Juices,Nestle,18.35,11.43
+P0065,Mango Nectar,Beverages,Juices,Almarai,49.04,36.68
+P0066,Apple Juice,Beverages,Juices,Abu Kass,18.04,12.39
+P0067,Mixed Berry,Beverages,Juices,Colgate,7.6,5.03
+P0068,Lemon Mint,Beverages,Juices,Tamimi Select,34.66,21.73
+P0069,Guava Juice,Beverages,Juices,Tamimi Select,13.82,10.12
+P0070,Pomegranate,Beverages,Juices,Almarai,3.82,2.81
+P0071,Saudi Coffee 500g,Beverages,Coffee & Tea,Lego,5.0,3.68
+P0072,Espresso Beans,Beverages,Coffee & Tea,Almarai,21.29,13.92
+P0073,Instant Coffee,Beverages,Coffee & Tea,Tamimi Select,64.92,43.98
+P0074,Black Tea 100,Beverages,Coffee & Tea,Nakheel Basics,14.76,10.23
+P0075,Green Tea,Beverages,Coffee & Tea,Philips,5.64,3.85
+P0076,Cardamom 250g,Beverages,Coffee & Tea,Nadec,47.32,32.15
+P0077,Coffee Pods,Beverages,Coffee & Tea,Almarai,69.88,45.71
+P0078,Karak Mix,Beverages,Coffee & Tea,Fine,19.33,14.47
+P0079,Cola 6pk,Beverages,Soft Drinks,Samsung,10.96,7.14
+P0080,Lemon Soda,Beverages,Soft Drinks,Sadia,26.99,17.13
+P0081,Energy Drink,Beverages,Soft Drinks,Nestle,31.05,19.32
+P0082,Malt Drink,Beverages,Soft Drinks,Al Rabie,11.16,7.86
+P0083,Iced Tea,Beverages,Soft Drinks,Anker,11.65,7.61
+P0084,Orange Soda,Beverages,Soft Drinks,Saudia,4.47,3.06
+P0085,Laundry Detergent,Household,Cleaning,Colgate,26.39,18.97
+P0086,Dish Soap,Household,Cleaning,Almarai,17.3,11.79
+P0087,Floor Cleaner,Household,Cleaning,Persil,37.69,26.91
+P0088,Bleach,Household,Cleaning,Saudia,113.97,75.06
+P0089,Glass Cleaner,Household,Cleaning,Samsung,17.48,11.75
+P0090,Fabric Softener,Household,Cleaning,Tamimi Select,13.26,9.41
+P0091,Dishwasher Tabs,Household,Cleaning,Anker,30.28,19.23
+P0092,Multi Surface,Household,Cleaning,Colgate,86.8,59.21
+P0093,Sponges,Household,Cleaning,Saudia,105.95,72.34
+P0094,Tissues 5pk,Household,Paper Products,Tamimi Select,71.87,45.61
+P0095,Toilet Roll 24,Household,Paper Products,Anker,109.2,72.53
+P0096,Kitchen Towels,Household,Paper Products,Lego,134.92,82.44
+P0097,Napkins,Household,Paper Products,Philips,65.14,41.11
+P0098,Wet Wipes,Household,Paper Products,Al Rabie,17.9,12.54
+P0099,Paper Plates,Household,Paper Products,Al Watania,15.41,9.75
+P0100,Foil Roll,Household,Paper Products,Nadec,10.72,6.87
+P0101,Non-stick Pan,Household,Kitchenware,Saudia,22.89,15.06
+P0102,Pot Set,Household,Kitchenware,Anker,16.2,10.15
+P0103,Knife Set,Household,Kitchenware,Philips,30.05,18.49
+P0104,Food Containers,Household,Kitchenware,Samsung,176.86,122.84
+P0105,Tea Set,Household,Kitchenware,Tamimi Select,111.77,73.96
+P0106,Coffee Dallah,Household,Kitchenware,Abu Kass,15.19,9.31
+P0107,Cutting Board,Household,Kitchenware,Tamimi Select,66.81,47.86
+P0108,Body Lotion,Personal Care,Skin Care,Saudia,10.28,6.41
+P0109,Sunscreen,Personal Care,Skin Care,Al Rabie,17.81,9.96
+P0110,Face Wash,Personal Care,Skin Care,Persil,71.89,45.43
+P0111,Moisturizer,Personal Care,Skin Care,Nestle,25.53,15.24
+P0112,Hand Cream,Personal Care,Skin Care,Dove,88.06,52.8
+P0113,Lip Balm,Personal Care,Skin Care,Persil,16.37,10.59
+P0114,Body Wash,Personal Care,Skin Care,Tamimi Select,10.46,6.21
+P0115,Face Mask,Personal Care,Skin Care,Nestle,64.97,43.55
+P0116,Deodorant,Personal Care,Skin Care,Colgate,97.87,55.02
+P0117,Shampoo,Personal Care,Hair Care,Tamimi Select,9.66,5.61
+P0118,Conditioner,Personal Care,Hair Care,Saudia,11.28,6.83
+P0119,Hair Oil,Personal Care,Hair Care,Almarai,48.44,27.88
+P0120,Hair Mask,Personal Care,Hair Care,Colgate,17.01,10.83
+P0121,Hair Serum,Personal Care,Hair Care,Nadec,100.89,60.71
+P0122,Kids Shampoo,Personal Care,Hair Care,Nakheel Basics,11.32,6.33
+P0123,Hair Gel,Personal Care,Hair Care,Al Watania,77.7,49.79
+P0124,Toothpaste,Personal Care,Oral Care,Nakheel Basics,61.47,38.03
+P0125,Toothbrush 2pk,Personal Care,Oral Care,Samsung,35.1,22.54
+P0126,Mouthwash,Personal Care,Oral Care,Sadia,16.44,9.88
+P0127,Dental Floss,Personal Care,Oral Care,Samsung,126.57,84.59
+P0128,Electric Brush Heads,Personal Care,Oral Care,Abu Kass,22.32,14.8
+P0129,Whitening Strips,Personal Care,Oral Care,Samsung,67.0,43.62
+P0130,Air Fryer,Electronics,Small Appliances,Almarai,394.11,325.39
+P0131,Blender,Electronics,Small Appliances,Al Rabie,79.87,69.21
+P0132,Kettle,Electronics,Small Appliances,Samsung,49.78,43.23
+P0133,Coffee Maker,Electronics,Small Appliances,Nakheel Basics,99.98,82.97
+P0134,Iron,Electronics,Small Appliances,Pampers,1008.39,840.79
+P0135,Vacuum Cleaner,Electronics,Small Appliances,Samsung,1057.72,932.44
+P0136,Power Bank,Electronics,Accessories,Sadia,287.92,257.4
+P0137,USB-C Cable,Electronics,Accessories,Fine,51.39,44.21
+P0138,Earbuds,Electronics,Accessories,Anker,435.24,373.22
+P0139,Phone Case,Electronics,Accessories,Nadec,630.89,526.16
+P0140,Charger 65W,Electronics,Accessories,Philips,176.25,157.11
+P0141,Smart Plug,Electronics,Accessories,Persil,1186.2,1042.29
+P0142,Smartphone A15,Electronics,Mobiles,Tamimi Select,60.42,52.98
+P0143,Smartphone S24,Electronics,Mobiles,Tamimi Select,235.99,197.33
+P0144,Smartphone Note,Electronics,Mobiles,Afia,298.21,244.56
+P0145,Tablet 10in,Electronics,Mobiles,Abu Kass,1816.79,1563.06
+P0146,Smartwatch,Electronics,Mobiles,Nakheel Basics,361.97,322.44
+P0147,Kids Tablet,Electronics,Mobiles,Colgate,1452.5,1239.08
+P0148,Feature Phone,Electronics,Mobiles,Tamimi Select,579.81,478.01
+P0149,Foldable Phone,Electronics,Mobiles,Lego,1501.72,1263.81
+P0150,Phone Bundle,Electronics,Mobiles,Al Watania,90.42,74.32
+P0151,Diapers Size 3,Baby & Kids,Diapers,Almarai,63.98,47.77
+P0152,Diapers Size 4,Baby & Kids,Diapers,Colgate,70.89,46.67
+P0153,Diapers Size 5,Baby & Kids,Diapers,Sadia,19.19,12.83
+P0154,Pull-Ups,Baby & Kids,Diapers,Al Rabie,38.11,26.63
+P0155,Newborn Diapers,Baby & Kids,Diapers,Almarai,160.21,119.8
+P0156,Baby Wipes,Baby & Kids,Diapers,Nakheel Basics,75.62,49.71
+P0157,Diaper Cream,Baby & Kids,Diapers,Saudia,27.3,19.1
+P0158,Swim Diapers,Baby & Kids,Diapers,Al Rabie,39.0,28.54
+P0159,Night Diapers,Baby & Kids,Diapers,Nadec,46.29,32.49
+P0160,Infant Formula,Baby & Kids,Baby Food,Nadec,91.14,59.05
+P0161,Cereal Stage 1,Baby & Kids,Baby Food,Colgate,82.17,56.66
+P0162,Fruit Puree,Baby & Kids,Baby Food,Fine,27.88,19.41
+P0163,Baby Snacks,Baby & Kids,Baby Food,Nadec,100.53,68.21
+P0164,Toddler Milk,Baby & Kids,Baby Food,Sadia,23.25,15.95
+P0165,Veg Puree,Baby & Kids,Baby Food,Nakheel Basics,21.19,13.91
+P0166,Baby Biscuits,Baby & Kids,Baby Food,Pampers,41.0,28.95
+P0167,Rice Cereal,Baby & Kids,Baby Food,Persil,26.32,19.49
+P0168,Baby Juice,Baby & Kids,Baby Food,Afia,120.14,85.79
+P0169,Building Blocks,Baby & Kids,Toys,Al Rabie,62.53,41.84
+P0170,Puzzle 100pc,Baby & Kids,Toys,Al Rabie,132.61,92.68
+P0171,Toy Car,Baby & Kids,Toys,Abu Kass,28.47,19.59
+P0172,Doll,Baby & Kids,Toys,Fine,19.27,12.78
+P0173,Board Game,Baby & Kids,Toys,Al Watania,151.3,103.93
+P0174,Coloring Set,Baby & Kids,Toys,Saudia,32.18,24.24
+P0175,Plush Camel,Baby & Kids,Toys,Nestle,132.92,87.8
+P0176,Ball,Baby & Kids,Toys,Nakheel Basics,101.96,73.96
+P0177,Science Kit,Baby & Kids,Toys,Dove,199.83,143.43

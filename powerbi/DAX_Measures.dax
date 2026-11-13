@@ -1,0 +1,137 @@
+// =====================================================================
+//  Nakheel Market - Retail Sales Performance | DAX measures
+//  Create a blank table named  _Measures  (Enter data > OK) and add these.
+//  Model: FactSales[*] -> DimDate[Date], DimProduct[ProductID],
+//         DimBranch[BranchID], DimCustomer[CustomerID]
+//         FactTargets[MonthStart] -> DimDate[Date], FactTargets[BranchID] -> DimBranch[BranchID]
+//  Mark DimDate as a Date table (Table tools > Mark as date table > Date)
+// =====================================================================
+
+// ---------- Core ----------
+Total Sales = SUM ( FactSales[NetSales] )
+
+Total Profit = SUM ( FactSales[Profit] )
+
+Total Cost = SUM ( FactSales[Cost] )
+
+Profit Margin % = DIVIDE ( [Total Profit], [Total Sales] )
+
+Orders = DISTINCTCOUNT ( FactSales[OrderID] )
+
+Units Sold = SUM ( FactSales[Quantity] )
+
+Avg Order Value = DIVIDE ( [Total Sales], [Orders] )
+
+Discount % =
+DIVIDE ( SUM ( FactSales[DiscountAmount] ), SUM ( FactSales[GrossSales] ) )
+
+// ---------- Customers ----------
+Active Members =
+CALCULATE (
+    DISTINCTCOUNT ( FactSales[CustomerID] ),
+    FactSales[CustomerID] <> "C00000"
+)
+
+Member Sales Share % =
+DIVIDE (
+    CALCULATE ( [Total Sales], FactSales[CustomerID] <> "C00000" ),
+    [Total Sales]
+)
+
+Repeat Customers =
+COUNTROWS (
+    FILTER (
+        VALUES ( FactSales[CustomerID] ),
+        FactSales[CustomerID] <> "C00000"
+            && CALCULATE ( DISTINCTCOUNT ( FactSales[OrderID] ) ) > 1
+    )
+)
+
+Repeat Rate % = DIVIDE ( [Repeat Customers], [Active Members] )
+
+// ---------- Time intelligence ----------
+Sales LY = CALCULATE ( [Total Sales], SAMEPERIODLASTYEAR ( DimDate[Date] ) )
+
+Sales YoY % =
+IF ( HASONEVALUE ( DimDate[Year] ), DIVIDE ( [Total Sales] - [Sales LY], [Sales LY] ) )
+
+Profit LY = CALCULATE ( [Total Profit], SAMEPERIODLASTYEAR ( DimDate[Date] ) )
+
+Sales YTD = TOTALYTD ( [Total Sales], DimDate[Date] )
+
+Sales MTD = TOTALMTD ( [Total Sales], DimDate[Date] )
+
+Sales 3M Rolling =
+CALCULATE (
+    [Total Sales],
+    DATESINPERIOD ( DimDate[Date], MAX ( DimDate[Date] ), -3, MONTH )
+)
+
+// ---------- Targets ----------
+Sales Target = SUM ( FactTargets[SalesTarget] )
+
+Target Achievement % = DIVIDE ( [Total Sales], [Sales Target] )
+
+Target Gap = [Total Sales] - [Sales Target]
+
+Target Status =
+SWITCH (
+    TRUE (),
+    ISBLANK ( [Sales Target] ), BLANK (),
+    [Target Achievement %] >= 1, "On target",
+    [Target Achievement %] >= 0.95, "Close",
+    "Below target"
+)
+
+// ---------- Operations ----------
+Returned Lines = CALCULATE ( COUNTROWS ( FactSales ), FactSales[IsReturned] = 1 )
+
+Return Rate % = DIVIDE ( [Returned Lines], COUNTROWS ( FactSales ) )
+
+Returned Sales = CALCULATE ( [Total Sales], FactSales[IsReturned] = 1 )
+
+Online Orders =
+CALCULATE ( [Orders], FactSales[Channel] IN { "Mobile App", "Delivery Partner" } )
+
+Online Share % = DIVIDE ( [Online Orders], [Orders] )
+
+Avg Delivery Minutes =
+AVERAGEX (
+    SUMMARIZE ( FILTER ( FactSales, NOT ISBLANK ( FactSales[DeliveryMinutes] ) ),
+        FactSales[OrderID], FactSales[DeliveryMinutes] ),
+    FactSales[DeliveryMinutes]
+)
+
+Late Deliveries % =
+VAR t =
+    SUMMARIZE ( FILTER ( FactSales, NOT ISBLANK ( FactSales[DeliveryMinutes] ) ),
+        FactSales[OrderID], FactSales[DeliveryMinutes] )
+RETURN
+    DIVIDE ( COUNTROWS ( FILTER ( t, FactSales[DeliveryMinutes] > 90 ) ), COUNTROWS ( t ) )
+
+// ---------- Ranking & dynamic titles ----------
+Product Rank =
+RANKX ( ALLSELECTED ( DimProduct[ProductName] ), [Total Sales], , DESC, DENSE )
+
+Branch Rank =
+RANKX ( ALLSELECTED ( DimBranch[BranchName] ), [Total Sales], , DESC, DENSE )
+
+Sales per Sqm =
+DIVIDE ( [Total Sales], SUM ( DimBranch[SizeSqm] ) )
+
+Title Overview =
+"Sales performance | "
+    & IF ( ISFILTERED ( DimBranch[Region] ), SELECTEDVALUE ( DimBranch[Region], "Several regions" ), "All regions" )
+    & " | "
+    & IF ( ISFILTERED ( DimDate[Year] ), SELECTEDVALUE ( DimDate[Year], "2024-2025" ), "2024-2025" )
+
+Top 10 Product Sales = IF ( [Product Rank] <= 10, [Total Sales] )
+
+Avg Daily Sales = DIVIDE ( [Total Sales], DISTINCTCOUNT ( FactSales[OrderDate] ) )
+
+Season Uplift % =
+VAR regular = CALCULATE ( [Avg Daily Sales], DimDate[Season] = "Regular" )
+RETURN DIVIDE ( [Avg Daily Sales] - regular, regular )
+
+// Color helper for conditional formatting (Format > Data colors > fx > Field value)
+YoY Color = IF ( [Sales YoY %] >= 0, "#1BAF7A", "#E34948" )

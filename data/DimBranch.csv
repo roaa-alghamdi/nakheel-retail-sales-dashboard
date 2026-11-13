@@ -1,0 +1,13 @@
+BranchID,BranchName,City,Region,StoreType,OpenDate,SizeSqm,BranchManager,Latitude,Longitude
+BR01,Olaya,Riyadh,Central,Hypermarket,2019-03-01,5200,Faisal Al-Otaibi,24.71,46.68
+BR02,Al Malqa,Riyadh,Central,Supermarket,2021-09-15,2400,Noura Al-Qahtani,24.71,46.68
+BR03,Al Naseem,Riyadh,Central,Express,2023-02-01,600,Saad Al-Harbi,24.71,46.68
+BR04,Al Rawdah,Jeddah,Western,Hypermarket,2019-11-10,4800,Reem Al-Zahrani,21.54,39.17
+BR05,Al Hamra,Jeddah,Western,Supermarket,2022-04-20,2100,Majed Al-Ghamdi,21.54,39.17
+BR06,Al Aziziyah,Makkah,Western,Supermarket,2020-06-01,2300,Huda Al-Shehri,21.39,39.86
+BR07,Quba,Madinah,Western,Supermarket,2021-01-12,2000,Turki Al-Mutairi,24.47,39.61
+BR08,Al Faisaliyah,Dammam,Eastern,Hypermarket,2020-02-02,4500,Lama Al-Dosari,26.43,50.1
+BR09,Al Ulaya,Khobar,Eastern,Supermarket,2022-10-01,1900,Khalid Al-Shammari,26.28,50.21
+BR10,Al Muruj,Tabuk,Northern,Supermarket,2021-05-05,1800,Maha Al-Anazi,28.38,36.57
+BR11,Al Rabwah,Abha,Southern,Supermarket,2023-06-18,1700,Omar Al-Asiri,18.22,42.51
+BR12,Al Iskan,Buraydah,Central,Express,2024-03-01,550,Sara Al-Subaie,26.33,43.97
